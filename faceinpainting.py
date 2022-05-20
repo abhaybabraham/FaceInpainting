@@ -55,11 +55,11 @@ def plot_images1(src_img, gen_img):
 
 from tensorflow.keras.models import load_model
 from numpy.random import randint
-model = load_model(r"C:\Users\abhay\OneDrive\Desktop\model_080000.h5")
+model = load_model("model_080000.h5")
 
 
 a = []
-img = cv2.imread(r"C:\Users\abhay\OneDrive\Desktop\newdataset\x\4998.jpg")
+img = cv2.imread("a.jpg")
 img = cv2.resize(img,(256,256),cv2.INTER_CUBIC)
 a.append(img)
 src_img=asarray(a)
